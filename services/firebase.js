@@ -1,0 +1,21 @@
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore, writeBatch } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDoL2Ra62bQIOU9heqnjKU6Thzi0nerfMY",
+  authDomain: "auth-react-7cc39.firebaseapp.com",
+  databaseURL: "https://auth-react-7cc39-default-rtdb.firebaseio.com",
+  projectId: "auth-react-7cc39",
+  storageBucket: "auth-react-7cc39.appspot.com",
+  messagingSenderId: "344061187006",
+  appId: "1:344061187006:web:2d14c1adb41d073eb55fef",
+  measurementId: "G-K2YNHBDN15"
+};
+
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const database = getFirestore(app);
+export const storage = getStorage(app);
+export const batch = writeBatch(database);
