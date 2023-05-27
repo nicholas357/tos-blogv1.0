@@ -47,26 +47,6 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
-    <html lang='en' />
-    <Head>
-      <meta charset="UTF-8"/>
-      <meta name="robots" content="index, follow"></meta>
-      <title>{post.title}</title>
-      <link rel='canonical' href={`/post/${post.slug}`} />
-      <meta name="description" content={post.excerpt}/>
-
-      <meta property="og:title" content={post.title} />
-      <meta property="og:description" content={post.excerpt} />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content={`/post/${post.slug}`} />
-      <meta property="og:image" content={post.featuredImage.url} />
-
-      <meta name="twitter:title" content={post.title} />
-      <meta name='twitter:type' content='article' />
-      <meta name="twitter:description" content={post.excerpt} />
-      <meta name="twitter:image" content={post.featuredImage.url} />
-      <meta property="twitter:url" content={`/post/${post.slug}`} />
-    </Head>
       <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8">
         <div className="relative overflow-hidden shadow-md mb-6">
           <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />

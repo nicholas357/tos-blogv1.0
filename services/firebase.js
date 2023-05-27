@@ -13,9 +13,3 @@ const firebaseConfig = {
   appId: "1:344061187006:web:2d14c1adb41d073eb55fef",
   measurementId: "G-K2YNHBDN15"
 };
-
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const database = getFirestore(app);
-export const storage = getStorage(app);
-export const batch = writeBatch(database);
