@@ -12,3 +12,4 @@ You'll also learn how to work with GraphCMS. GraphCMS is a headless content mana
 "# blog_tos" 
 "# blog_tos" 
 "# tos-blog" 
+"# tos-blogv1.0" 
